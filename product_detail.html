@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/product_detail.css" />
+  </head>
+  <body>
+    <header>
+        <nav class="nav-1">
+          <ul>
+              <li class="hihi" ><a href="#">Kênh người bán</a></li>
+              <li class="hihi" ><a href="#">Tải ứng dụng</a></li>
+              <li><a href="#">Kết nối</a></li>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+  
+          <ul style="position: relative;">
+              <li><a href="#"><i class="fa-solid fa-bell"></i>Thông báo</a></li>
+              <li><a href="#"><i class="fa-solid fa-headset"></i>Hỗ trợ</a></li>
+              <li><a href="#"><i class="fa-solid fa-language"></i>Tiếng việt</a></li>
+              <li id="user"><a href="register.html"><i class="fa-solid fa-user-tie"></i>User</a></li>
+          </ul>
+        </nav>
+  
+  
+  
+        <nav class="nav-2">
+          <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="" /></a>
+          </div>
+          <div class="search">
+            <form id="form-search" method="GET">
+              <input name="search" type="text" placeholder="Search..." />
+              <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+              <input
+                style="width: 70px; cursor: pointer"
+                type="submit"
+                name="btn-search"
+                value="Tìm"
+              />
+            </form>
+          </div>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </nav>
+  
+        <nav class="nav-3">
+          <ul>
+              <li><a href="#">Áo thun</a></li>
+              <li><a href="#">Quà tặng bạn trai</a></li>
+              <li><a href="#">Cốc sứ</a></li>
+              <li><a href="#">Bút bi cao cấp</a></li>
+              <li><a href="#">Áo Vancity</a></li>
+              <li><a href="#">Áo khoác Retro</a></li>
+              <li><a href="#">Giày nam</a></li>
+              <li><a href="#">Mũ bảo hiểm</a></li>
+              <li><a href="#">Sữa rửa mặt</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <section>
+      <div class="product_detail">
+        <div class="img">
+          <img id="img" src="./img/mitom.webp" alt="" />
+        </div>
+        <div class="info">
+          <h3 class="title">Tên sản phẩm</h3>
+          <!-- su dung thuoc tinh innerText -->
+          <div class="vote">
+            <ul>
+              <li style="color: rgba(255, 217, 0, 0.956)">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </li>
+              <li>51 đánh giá</li>
+              <li>480 đã bán</li>
+            </ul>
+          </div>
+          <p class="clear"></p>
+          <div class="price">
+            <br />
+            <del>125 000</del>
+            <i id="price">100 000</i>
+          </div>
+
+          <div class="number">
+            <p>số lượng</p>
+            <button class="minus">-</button>
+            <input id="num" type="number" value="1" min="1" />
+            <button class="plus">+</button>
+          </div>
+
+          <p class="clear"></p>
+          <div class="add_buy">
+            <button class="add">Thêm vào giỏ hàng</button>
+            <button class="buy">Mua ngay</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">Nguyễn Thị Dịu - PH53010</footer>
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/791d1d50ef.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="./js/detail_product.js"></script>
+</html>
